@@ -1,0 +1,10 @@
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\bin\Debug\majid_milestone-42.exe.config
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\bin\Debug\majid_milestone-42.exe
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\bin\Debug\majid_milestone-42.pdb
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone-42.csprojAssemblyReference.cache
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone_42.Form1.resources
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone_42.Properties.Resources.resources
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone-42.csproj.GenerateResource.cache
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone-42.csproj.CoreCompileInputs.cache
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone-42.exe
+C:\Users\zacca\source\repos\majid_milestone-42\majid_milestone-42\obj\Debug\majid_milestone-42.pdb
