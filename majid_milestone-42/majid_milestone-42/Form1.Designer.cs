@@ -29,8 +29,35 @@
         private void InitializeComponent()
         {
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.label20 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.textBox18 = new System.Windows.Forms.TextBox();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -73,13 +100,46 @@
             this.label11 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.button3 = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
+            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.textBox19 = new System.Windows.Forms.TextBox();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.textBox20 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.textBox22 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.textBox23 = new System.Windows.Forms.TextBox();
+            this.textBox24 = new System.Windows.Forms.TextBox();
+            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.tabPage2.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -88,12 +148,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.checkBox1);
+            this.tabPage2.Controls.Add(this.button5);
+            this.tabPage2.Controls.Add(this.groupBox5);
+            this.tabPage2.Controls.Add(this.button4);
+            this.tabPage2.Controls.Add(this.groupBox6);
             this.tabPage2.Controls.Add(this.dataGridView3);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
@@ -103,10 +176,250 @@
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox1.Location = new System.Drawing.Point(1270, 300);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(199, 29);
+            this.checkBox1.TabIndex = 40;
+            this.checkBox1.Text = "Modalità modifica";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.checkBox1.CheckStateChanged += new System.EventHandler(this.checkBox1_CheckStateChanged);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(1270, 344);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(314, 41);
+            this.button5.TabIndex = 39;
+            this.button5.Text = "MODIFICA";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.textBox7);
+            this.groupBox5.Controls.Add(this.dateTimePicker3);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.textBox9);
+            this.groupBox5.Controls.Add(this.label21);
+            this.groupBox5.Controls.Add(this.label22);
+            this.groupBox5.Controls.Add(this.comboBox2);
+            this.groupBox5.Controls.Add(this.label23);
+            this.groupBox5.Controls.Add(this.textBox15);
+            this.groupBox5.Location = new System.Drawing.Point(1270, 17);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(314, 277);
+            this.groupBox5.TabIndex = 37;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "dati atleta";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 61);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(35, 13);
+            this.label10.TabIndex = 22;
+            this.label10.Text = "Nome";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Enabled = false;
+            this.textBox7.Location = new System.Drawing.Point(104, 58);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(119, 20);
+            this.textBox7.TabIndex = 21;
+            // 
+            // dateTimePicker3
+            // 
+            this.dateTimePicker3.Enabled = false;
+            this.dateTimePicker3.Location = new System.Drawing.Point(104, 137);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(119, 20);
+            this.dateTimePicker3.TabIndex = 20;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(11, 94);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(52, 13);
+            this.label20.TabIndex = 17;
+            this.label20.Text = "Cognome";
+            // 
+            // textBox9
+            // 
+            this.textBox9.Enabled = false;
+            this.textBox9.Location = new System.Drawing.Point(104, 94);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(119, 20);
+            this.textBox9.TabIndex = 7;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(12, 223);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(88, 13);
+            this.label21.TabIndex = 15;
+            this.label21.Text = "Livello agonistico";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(11, 183);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(87, 13);
+            this.label22.TabIndex = 19;
+            this.label22.Text = "Città di residenza";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Enabled = false;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Dilettanti",
+            "Junior",
+            "Senior"});
+            this.comboBox2.Location = new System.Drawing.Point(104, 220);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(119, 21);
+            this.comboBox2.TabIndex = 10;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(10, 141);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(78, 13);
+            this.label23.TabIndex = 18;
+            this.label23.Text = "Data di nascita";
+            // 
+            // textBox15
+            // 
+            this.textBox15.Enabled = false;
+            this.textBox15.Location = new System.Drawing.Point(104, 180);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(119, 20);
+            this.textBox15.TabIndex = 9;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(927, 300);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(313, 41);
+            this.button4.TabIndex = 38;
+            this.button4.Text = "ELIMINA";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.dateTimePicker4);
+            this.groupBox6.Controls.Add(this.label24);
+            this.groupBox6.Controls.Add(this.label25);
+            this.groupBox6.Controls.Add(this.label26);
+            this.groupBox6.Controls.Add(this.label27);
+            this.groupBox6.Controls.Add(this.textBox16);
+            this.groupBox6.Controls.Add(this.textBox17);
+            this.groupBox6.Controls.Add(this.textBox18);
+            this.groupBox6.Location = new System.Drawing.Point(927, 17);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(314, 277);
+            this.groupBox6.TabIndex = 35;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "dati visita medica";
+            // 
+            // dateTimePicker4
+            // 
+            this.dateTimePicker4.Enabled = false;
+            this.dateTimePicker4.Location = new System.Drawing.Point(172, 165);
+            this.dateTimePicker4.Name = "dateTimePicker4";
+            this.dateTimePicker4.Size = new System.Drawing.Size(119, 20);
+            this.dateTimePicker4.TabIndex = 21;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 218);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(88, 13);
+            this.label24.TabIndex = 16;
+            this.label24.Text = "Livello di idoneità";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(6, 168);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(90, 13);
+            this.label25.TabIndex = 13;
+            this.label25.Text = "Data di emissione";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(6, 122);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(72, 13);
+            this.label26.TabIndex = 12;
+            this.label26.Text = "Nome medico";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(6, 65);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(89, 13);
+            this.label27.TabIndex = 11;
+            this.label27.Text = "Codice certificato";
+            // 
+            // textBox16
+            // 
+            this.textBox16.Enabled = false;
+            this.textBox16.Location = new System.Drawing.Point(172, 216);
+            this.textBox16.Name = "textBox16";
+            this.textBox16.Size = new System.Drawing.Size(119, 20);
+            this.textBox16.TabIndex = 5;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Enabled = false;
+            this.textBox17.Location = new System.Drawing.Point(172, 65);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(119, 20);
+            this.textBox17.TabIndex = 0;
+            // 
+            // textBox18
+            // 
+            this.textBox18.Enabled = false;
+            this.textBox18.Location = new System.Drawing.Point(172, 118);
+            this.textBox18.Name = "textBox18";
+            this.textBox18.Size = new System.Drawing.Size(119, 20);
+            this.textBox18.TabIndex = 1;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Location = new System.Drawing.Point(3, 17);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.Size = new System.Drawing.Size(886, 623);
+            this.dataGridView3.TabIndex = 0;
+            this.dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellClick);
+            // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Location = new System.Drawing.Point(12, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -131,6 +444,35 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(486, 311);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(314, 32);
+            this.button3.TabIndex = 33;
+            this.button3.Text = "Inserisci nuova disciplina";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(143, 311);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(314, 32);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Inserisci nuovo gruppo sportivo";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(831, 349);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.Size = new System.Drawing.Size(437, 250);
+            this.dataGridView2.TabIndex = 31;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // dataGridView1
             // 
@@ -219,6 +561,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Dilettanti",
@@ -518,42 +861,338 @@
             this.textBox4.Size = new System.Drawing.Size(119, 20);
             this.textBox4.TabIndex = 21;
             // 
-            // dataGridView2
+            // tabPage3
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(831, 349);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(437, 250);
-            this.dataGridView2.TabIndex = 31;
-            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
+            this.tabPage3.Controls.Add(this.checkBox3);
+            this.tabPage3.Controls.Add(this.button9);
+            this.tabPage3.Controls.Add(this.button8);
+            this.tabPage3.Controls.Add(this.checkBox2);
+            this.tabPage3.Controls.Add(this.button6);
+            this.tabPage3.Controls.Add(this.button7);
+            this.tabPage3.Controls.Add(this.groupBox7);
+            this.tabPage3.Controls.Add(this.groupBox8);
+            this.tabPage3.Controls.Add(this.dataGridView5);
+            this.tabPage3.Controls.Add(this.dataGridView4);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1612, 733);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // checkBox3
             // 
-            this.button2.Location = new System.Drawing.Point(143, 311);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(314, 32);
-            this.button2.TabIndex = 32;
-            this.button2.Text = "Inserisci nuovo gruppo sportivo";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox3.Location = new System.Drawing.Point(1179, 426);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(199, 29);
+            this.checkBox3.TabIndex = 46;
+            this.checkBox3.Text = "Modalità modifica";
+            this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // dataGridView3
+            // button9
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(35, 38);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(1169, 623);
-            this.dataGridView3.TabIndex = 0;
+            this.button9.Location = new System.Drawing.Point(1179, 369);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(134, 41);
+            this.button9.TabIndex = 45;
+            this.button9.Text = "ELIMINA";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // button3
+            // button8
             // 
-            this.button3.Location = new System.Drawing.Point(486, 311);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(314, 32);
-            this.button3.TabIndex = 33;
-            this.button3.Text = "Inserisci nuova disciplina";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button8.Location = new System.Drawing.Point(968, 369);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(133, 41);
+            this.button8.TabIndex = 44;
+            this.button8.Text = "MODIFICA";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Visible = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox2.Location = new System.Drawing.Point(800, 426);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(199, 29);
+            this.checkBox2.TabIndex = 43;
+            this.checkBox2.Text = "Modalità modifica";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(1346, 369);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(134, 41);
+            this.button6.TabIndex = 42;
+            this.button6.Text = "MODIFICA";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(800, 369);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(133, 41);
+            this.button7.TabIndex = 41;
+            this.button7.Text = "ELIMINA";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.numericUpDown4);
+            this.groupBox7.Controls.Add(this.numericUpDown5);
+            this.groupBox7.Controls.Add(this.numericUpDown6);
+            this.groupBox7.Controls.Add(this.label28);
+            this.groupBox7.Controls.Add(this.label29);
+            this.groupBox7.Controls.Add(this.label30);
+            this.groupBox7.Controls.Add(this.label31);
+            this.groupBox7.Controls.Add(this.textBox19);
+            this.groupBox7.Location = new System.Drawing.Point(1179, 25);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(301, 325);
+            this.groupBox7.TabIndex = 3;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "dati disciplina";
+            // 
+            // numericUpDown4
+            // 
+            this.numericUpDown4.Location = new System.Drawing.Point(104, 235);
+            this.numericUpDown4.Name = "numericUpDown4";
+            this.numericUpDown4.Size = new System.Drawing.Size(114, 20);
+            this.numericUpDown4.TabIndex = 35;
+            // 
+            // numericUpDown5
+            // 
+            this.numericUpDown5.Location = new System.Drawing.Point(104, 188);
+            this.numericUpDown5.Name = "numericUpDown5";
+            this.numericUpDown5.Size = new System.Drawing.Size(114, 20);
+            this.numericUpDown5.TabIndex = 34;
+            // 
+            // numericUpDown6
+            // 
+            this.numericUpDown6.Location = new System.Drawing.Point(104, 146);
+            this.numericUpDown6.Name = "numericUpDown6";
+            this.numericUpDown6.Size = new System.Drawing.Size(114, 20);
+            this.numericUpDown6.TabIndex = 33;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(11, 237);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(68, 13);
+            this.label28.TabIndex = 32;
+            this.label28.Text = "Livello senior";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(11, 190);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(65, 13);
+            this.label29.TabIndex = 31;
+            this.label29.Text = "Livello junior";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(11, 102);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(81, 13);
+            this.label30.TabIndex = 21;
+            this.label30.Text = "Nome disciplina";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(11, 149);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(79, 13);
+            this.label31.TabIndex = 22;
+            this.label31.Text = "Livello dilettanti";
+            // 
+            // textBox19
+            // 
+            this.textBox19.Location = new System.Drawing.Point(104, 95);
+            this.textBox19.Name = "textBox19";
+            this.textBox19.Size = new System.Drawing.Size(114, 20);
+            this.textBox19.TabIndex = 27;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.label32);
+            this.groupBox8.Controls.Add(this.label33);
+            this.groupBox8.Controls.Add(this.textBox20);
+            this.groupBox8.Controls.Add(this.label34);
+            this.groupBox8.Controls.Add(this.textBox21);
+            this.groupBox8.Controls.Add(this.label35);
+            this.groupBox8.Controls.Add(this.textBox22);
+            this.groupBox8.Controls.Add(this.label36);
+            this.groupBox8.Controls.Add(this.textBox23);
+            this.groupBox8.Controls.Add(this.textBox24);
+            this.groupBox8.Location = new System.Drawing.Point(800, 25);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(301, 325);
+            this.groupBox8.TabIndex = 2;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "dati gruppo sportivo";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(10, 242);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(66, 13);
+            this.label32.TabIndex = 26;
+            this.label32.Text = "Indirizzo mail";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(10, 207);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(96, 13);
+            this.label33.TabIndex = 24;
+            this.label33.Text = "Numero di telefono";
+            // 
+            // textBox20
+            // 
+            this.textBox20.Enabled = false;
+            this.textBox20.Location = new System.Drawing.Point(129, 235);
+            this.textBox20.Name = "textBox20";
+            this.textBox20.Size = new System.Drawing.Size(119, 20);
+            this.textBox20.TabIndex = 25;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(10, 170);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(87, 13);
+            this.label34.TabIndex = 23;
+            this.label34.Text = "Nome presidente";
+            // 
+            // textBox21
+            // 
+            this.textBox21.Enabled = false;
+            this.textBox21.Location = new System.Drawing.Point(129, 200);
+            this.textBox21.Name = "textBox21";
+            this.textBox21.Size = new System.Drawing.Size(119, 20);
+            this.textBox21.TabIndex = 24;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(10, 134);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(71, 13);
+            this.label35.TabIndex = 22;
+            this.label35.Text = "Indirizzo sede";
+            // 
+            // textBox22
+            // 
+            this.textBox22.Enabled = false;
+            this.textBox22.Location = new System.Drawing.Point(129, 163);
+            this.textBox22.Name = "textBox22";
+            this.textBox22.Size = new System.Drawing.Size(119, 20);
+            this.textBox22.TabIndex = 23;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(10, 98);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(83, 13);
+            this.label36.TabIndex = 21;
+            this.label36.Text = "Ragione sociale";
+            // 
+            // textBox23
+            // 
+            this.textBox23.Enabled = false;
+            this.textBox23.Location = new System.Drawing.Point(129, 127);
+            this.textBox23.Name = "textBox23";
+            this.textBox23.Size = new System.Drawing.Size(119, 20);
+            this.textBox23.TabIndex = 22;
+            // 
+            // textBox24
+            // 
+            this.textBox24.Enabled = false;
+            this.textBox24.Location = new System.Drawing.Point(129, 91);
+            this.textBox24.Name = "textBox24";
+            this.textBox24.Size = new System.Drawing.Size(119, 20);
+            this.textBox24.TabIndex = 21;
+            // 
+            // dataGridView5
+            // 
+            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView5.Location = new System.Drawing.Point(19, 408);
+            this.dataGridView5.Name = "dataGridView5";
+            this.dataGridView5.Size = new System.Drawing.Size(736, 325);
+            this.dataGridView5.TabIndex = 1;
+            this.dataGridView5.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView5_CellClick);
+            // 
+            // dataGridView4
+            // 
+            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView4.Location = new System.Drawing.Point(19, 25);
+            this.dataGridView4.Name = "dataGridView4";
+            this.dataGridView4.Size = new System.Drawing.Size(736, 325);
+            this.dataGridView4.TabIndex = 0;
+            this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellClick);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.comboBox3);
+            this.tabPage4.Controls.Add(this.label37);
+            this.tabPage4.Controls.Add(this.dataGridView6);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1612, 733);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "Dilettanti",
+            "Junior",
+            "Senior"});
+            this.comboBox3.Location = new System.Drawing.Point(963, 83);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(119, 21);
+            this.comboBox3.TabIndex = 11;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_1);
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(957, 37);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(276, 31);
+            this.label37.TabIndex = 3;
+            this.label37.Text = "Selezionare disciplina";
+            // 
+            // dataGridView6
+            // 
+            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView6.Location = new System.Drawing.Point(32, 37);
+            this.dataGridView6.Name = "dataGridView6";
+            this.dataGridView6.Size = new System.Drawing.Size(886, 623);
+            this.dataGridView6.TabIndex = 1;
             // 
             // Form1
             // 
@@ -564,8 +1203,15 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
@@ -578,8 +1224,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -635,6 +1293,62 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.DateTimePicker dateTimePicker4;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox textBox18;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown numericUpDown5;
+        private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.TextBox textBox19;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox textBox20;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.TextBox textBox22;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox textBox23;
+        private System.Windows.Forms.TextBox textBox24;
+        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }
 
