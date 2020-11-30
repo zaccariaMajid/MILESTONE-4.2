@@ -22,8 +22,8 @@ namespace majid_milestone_42
             }
             set
             {
-                if(value.Length < 10 || value.Length > 10)
-                    throw new Exception("Formato numero di telefono non valido");
+                //if(value.Length != 1)
+                //    throw new Exception("Formato numero di telefono non valido");
 
                 _telefono = value;
             }

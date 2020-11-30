@@ -20,6 +20,8 @@ namespace majid_milestone_42
             {
                 if (string.IsNullOrEmpty(value))
                     throw new Exception("Campo obbligatorio!");
+
+                _nomeD = value;
             }
         }
 

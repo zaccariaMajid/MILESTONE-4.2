@@ -118,38 +118,6 @@ namespace majid_milestone_42
             }
         }
 
-        private string _gruppoS;
-
-        public string gruppoS
-        {
-            get
-            {
-                return _gruppoS;
-            }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    throw new Exception("Campo obbligatorio");
-                _gruppoS = value;
-            }
-        }
-
-        private string _disciplina;
-
-        public string disciplina
-        {
-            get
-            {
-                return _disciplina;
-            }
-            set
-            {
-                if (string.IsNullOrEmpty(value))
-                    throw new Exception("Campo obbligatorio");
-                _disciplina = value;
-            }
-        }
-
         private string _lvl;
 
         public string lvl
@@ -185,7 +153,36 @@ namespace majid_milestone_42
             }
         }
 
-        public atleta(string codI, string med, DateTime dataS, string nomeA, string cogn, DateTime dataN, string citt, string gruppoS, string disciplina, string lvl, int ido)
+        private gruppisportivi _gs;
+        public gruppisportivi gs
+        {
+            get
+            {
+                return _gs;
+            }
+            set
+            {
+                if (value == null)
+                    throw new Exception("Campo obbligatorio");
+                _gs = value;
+            }
+        }
+        private disciplinesportive _disc;
+        public disciplinesportive disc
+        {
+            get
+            {
+                return _disc;
+            }
+            set
+            {
+                if (value == null)
+                    throw new Exception("Campo obbligatorio");
+                _disc = value;
+            }
+        }
+
+        public atleta(string codI, string med, DateTime dataS, int ido, string nomeA, string cogn, DateTime dataN, string citt, gruppisportivi gs, disciplinesportive disc, string lvl)
         {
             if (string.IsNullOrEmpty(codI) == true)
             {
@@ -206,8 +203,8 @@ namespace majid_milestone_42
             this.cogn = cogn;
             this.dataN = dataN;
             this.citt = citt;
-            this.gruppoS = gruppoS;
-            this.disciplina = disciplina;
+            this.gs = gs;
+            this.disc = disc;
             this.lvl = lvl;
             this.ido = ido;
         }
