@@ -29,21 +29,7 @@ namespace majid_milestone_42
             dataGridView2.DataSource = l.ToList();
         }
 
-        private void ClearTextBoxes()
-        {
-            Action<Control.ControlCollection> func = null;
-
-            func = (controls) =>
-            {
-                foreach (Control control in controls)
-                    if (control is TextBox)
-                        (control as TextBox).Clear();
-                    else
-                        func(control.Controls);
-            };
-
-            func(Controls);
-        }
+        
 
         List<disciplinesportive> eledisc = new List<disciplinesportive>();
         List<gruppisportivi> elegrup = new List<gruppisportivi>();
@@ -105,7 +91,8 @@ namespace majid_milestone_42
                 return;
             }
 
-            ClearTextBoxes();
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
