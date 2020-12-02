@@ -27,14 +27,14 @@ namespace majid_milestone_42
             var dd = eledisc.Where(s => s.nomeD == "Basket").FirstOrDefault();
             elegrup.Add(new gruppisportivi("giovanni spa", "Via Papa", "giovanni verdi", "0", "giovanni@gmail.com"));
             var rr = elegrup.Where(s => s.ragioneS == "giovanni spa").FirstOrDefault();
-            eleatl.Add(new atleta("axl00s", "maria", DateTime.Parse("28/05/2020"), 95, "giuseppe", "diego", DateTime.Parse("08/02/2001"), "miasdlano", rr, dd, "Dilettanti"));
+            eleatl.Add(new atleta("axl00s", "maria", DateTime.Parse("28/05/2020"), 95, "giuseppe", "diego", DateTime.Parse("08/02/2001"), "miasdlano", rr, dd, "Senior"));
             comboBox3.Items.Add("Basket");
             /////////////////////////////////////////////////////////
             eledisc.Add(new disciplinesportive("Scherma", 40, 60, 70));
             var ddd = eledisc.Where(s => s.nomeD == "Scherma").FirstOrDefault();
             elegrup.Add(new gruppisportivi("liano spa", "Vdsia Papa", "liano bianchi", "0", "liano@gmail.com"));
             var rrr = elegrup.Where(s => s.ragioneS == "liano spa").FirstOrDefault();
-            eleatl.Add(new atleta("axl0s", "liano", DateTime.Parse("04/12/2019"), 20, "francesco", "carminati", DateTime.Parse("26/05/2002"), "milaadsno", rrr, ddd, "Senior"));
+            eleatl.Add(new atleta("axl0s", "liano", DateTime.Parse("04/12/2019"), 20, "francesco", "carminati", DateTime.Parse("26/05/2002"), "milaadsno", rrr, ddd, "Dilettanti"));
             comboBox3.Items.Add("Scherma");
             /////////////////////////////////////////////////////////
 
@@ -101,55 +101,21 @@ namespace majid_milestone_42
         {
             try
             {
-                if (textBox4.Enabled == true)
-                {
-                    var nuovoGrup = new gruppisportivi(textBox4.Text, textBox5.Text, textBox11.Text, textBox12.Text, textBox13.Text);
-                    if (elegrup.Contains(nuovoGrup))
-                    {
-                        MessageBox.Show("Disciplina esistente nel registro");
-                    }
-                    elegrup.Add(nuovoGrup);
-                    
-                    //visualizza gruppo sociale
-                    var q = elegrup.Select(k => new { Ragione_sociale = k.ragioneS, Indirizzo = k.indirizzoS, Numero_telefono = k.telefono, Nome_presidente = k.nomeP, Indirizzo_mail = k.mail });
-                    dataGridView2.DataSource = q.ToList();
-                }
-
-                if (textBox14.Enabled == true)
-                {                    
-                    var nuovaDisc = new disciplinesportive(textBox14.Text, int.Parse(numericUpDown1.Value.ToString()), int.Parse(numericUpDown2.Value.ToString()), int.Parse(numericUpDown3.Value.ToString()));
-
-                    if (eledisc.Contains(nuovaDisc))
-                    {
-                        MessageBox.Show("Disciplina esistente nel registro");
-                    }
-                    eledisc.Add(nuovaDisc);
-                    //visualizza disciplina
-                    var p = eledisc.Select(s => new { Nome = s.nomeD, Livello_dilettanti = s.livelloDil, Livello_junior = s.livelloJun, Livello_senior = s.livelloSen });
-                    comboBox3.Items.Add(textBox14.Text);
-                    dataGridView1.DataSource = p.ToList();
-                }
-
+                
                 var disc = eledisc.Where(s => s.nomeD == textBox14.Text).FirstOrDefault();
                 var grup = elegrup.Where(s => s.ragioneS == textBox4.Text).FirstOrDefault();
 
-                var nuovaAtl = new atleta(textBox1.Text, textBox2.Text, dateTimePicker1.Value.Date, int.Parse(textBox6.Text), textBox3.Text, textBox8.Text, dateTimePicker2.Value.Date, textBox10.Text, grup, disc, comboBox1.SelectedItem.ToString());
+                var nuovaAtl = new atleta(textBox1.Text, textBox2.Text, dateTimePicker2.Value.Date, int.Parse(textBox6.Text), textBox3.Text, textBox8.Text, dateTimePicker1.Value.Date, textBox10.Text, grup, disc, comboBox1.SelectedItem.ToString());
 
                 eleatl.Add(nuovaAtl);
 
                 var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl });
-                //visualizza disciplina
-                var d = eledisc.Select(s => new { Nome = s.nomeD, Livello_dilettanti = s.livelloDil, Livello_junior = s.livelloJun, Livello_senior = s.livelloSen });
-                //visualizza gruppo sociale
-                var l = elegrup.Select(k => new { Ragione_sociale = k.ragioneS, Indirizzo = k.indirizzoS, Numero_telefono = k.telefono, Nome_presidente = k.nomeP, Indirizzo_mail = k.mail });
 
-                dataGridView1.DataSource = d.ToList();
-                dataGridView2.DataSource = l.ToList();
                 dataGridView3.DataSource = dataFin.ToList();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Dati già esistenti", ex.Message);
+                MessageBox.Show(ex.Message);
                 return;
             }
 
@@ -165,21 +131,20 @@ namespace majid_milestone_42
 
         private void button2_Click(object sender, EventArgs e)
         {
-            groupBox1.Visible = true;
-                    
+            if (textBox4.Enabled == true)
+            {
+                var nuovoGrup = new gruppisportivi(textBox4.Text, textBox5.Text, textBox11.Text, textBox12.Text, textBox13.Text);
+                if (elegrup.Contains(nuovoGrup))
+                {
+                    MessageBox.Show("Disciplina esistente nel registro");
+                }
+                elegrup.Add(nuovoGrup);
 
-            textBox4.Enabled = true;
-            textBox5.Enabled = true;
-            textBox11.Enabled = true;
-            textBox12.Enabled = true;
-            textBox13.Enabled = true;
-
-
-            textBox4.Clear();
-            textBox5.Clear();
-            textBox11.Clear();
-            textBox12.Clear();
-            textBox13.Clear();
+                //visualizza gruppo sociale
+                var q = elegrup.Select(k => new { Ragione_sociale = k.ragioneS, Indirizzo = k.indirizzoS, Numero_telefono = k.telefono, Nome_presidente = k.nomeP, Indirizzo_mail = k.mail });
+                dataGridView2.DataSource = q.ToList();
+                checkBox4.Checked = false;
+            }
         }
 
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -239,17 +204,21 @@ namespace majid_milestone_42
 
         private void button3_Click(object sender, EventArgs e)
         {
-            groupBox3.Visible = true;
+            if (textBox14.Enabled == true)
+            {
+                var nuovaDisc = new disciplinesportive(textBox14.Text, int.Parse(numericUpDown1.Value.ToString()), int.Parse(numericUpDown2.Value.ToString()), int.Parse(numericUpDown3.Value.ToString()));
 
-            textBox14.Enabled = true;
-            numericUpDown1.Enabled = true;
-            numericUpDown2.Enabled = true;
-            numericUpDown3.Enabled = true;
-
-            textBox14.Clear();
-            numericUpDown1.Value = 0;
-            numericUpDown2.Value = 0;
-            numericUpDown3.Value = 0;
+                if (eledisc.Contains(nuovaDisc))
+                {
+                    MessageBox.Show("Disciplina esistente nel registro");
+                }
+                eledisc.Add(nuovaDisc);
+                //visualizza disciplina
+                var p = eledisc.Select(s => new { Nome = s.nomeD, Livello_dilettanti = s.livelloDil, Livello_junior = s.livelloJun, Livello_senior = s.livelloSen });
+                comboBox3.Items.Add(textBox14.Text);
+                checkBox5.Checked = false;
+                dataGridView1.DataSource = p.ToList();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -351,7 +320,7 @@ namespace majid_milestone_42
 
         private void button7_Click(object sender, EventArgs e)
         {
-            var gruppoR = elegrup.Where(i => i.ragioneS == textBox24.Text).FirstOrDefault();
+            var gruppoR = elegrup.Where(i => i.ragioneS == textBox25.Text).FirstOrDefault();
 
             elegrup.Remove(gruppoR);
 
@@ -367,7 +336,7 @@ namespace majid_milestone_42
 
         private void dataGridView4_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            textBox24.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
+            textBox25.Text = dataGridView4.CurrentRow.Cells[0].Value.ToString();
             textBox23.Text = dataGridView4.CurrentRow.Cells[1].Value.ToString();
             textBox22.Text = dataGridView4.CurrentRow.Cells[2].Value.ToString();
             textBox21.Text = dataGridView4.CurrentRow.Cells[3].Value.ToString();
@@ -384,13 +353,13 @@ namespace majid_milestone_42
 
         private void button8_Click(object sender, EventArgs e)
         {
-            var grup = elegrup.Where(m => m.ragioneS == textBox24.Text).FirstOrDefault();
+            var grup = elegrup.Where(m => m.ragioneS == textBox25.Text).FirstOrDefault();
 
             try
             {
                 elegrup.Remove(grup);
 
-                grup.ragioneS = textBox24.Text;
+                grup.ragioneS = textBox25.Text;
                 grup.indirizzoS = textBox23.Text;
                 grup.nomeP = textBox22.Text;
                 grup.telefono = textBox21.Text;
@@ -398,6 +367,7 @@ namespace majid_milestone_42
                 elegrup.Add(grup);
                 var l = elegrup.Select(k => new { rag = k.ragioneS, via = k.indirizzoS, nomep = k.nomeP, tel = k.telefono, mail = k.mail });
                 MessageBox.Show("Dati del gruppo sportivo modificati con successo");
+
                 var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl });
 
                 dataGridView3.DataSource = dataFin.ToList();
@@ -416,7 +386,7 @@ namespace majid_milestone_42
         {
             if(checkBox2.Checked == true)
             {
-                textBox24.Enabled = true;
+                textBox25.Enabled = true;
                 textBox23.Enabled = true;
                 textBox22.Enabled = true;
                 textBox21.Enabled = true;
@@ -427,7 +397,7 @@ namespace majid_milestone_42
 
             if(checkBox2.Checked == false)
             {
-                textBox24.Enabled = false;
+                textBox25.Enabled = false;
                 textBox23.Enabled = false;
                 textBox22.Enabled = false;
                 textBox21.Enabled = false;
@@ -453,6 +423,8 @@ namespace majid_milestone_42
             dataGridView3.DataSource = dataFin.ToList();
 
             dataGridView5.DataSource = g.ToList();
+
+            comboBox3.Items.Remove(textBox19.Text);
 
             ClearTextBoxes(this.Controls);
             ClearNUD(this.Controls);
@@ -487,15 +459,11 @@ namespace majid_milestone_42
         private void button10_Click(object sender, EventArgs e)
         {
             var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl }).ToList();
-            //var lvls = eledisc.Where()
-            dataGridView6.DataSource = (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] == "#NaN#" ? dataFin : dataFin.Where(p => p.Livello_agonistico == (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] /*&& p.Livello_atleta ==*/ ).ToList();
-            comboBox3.Text = "";
+            dataGridView6.DataSource = dataFin;
         }
 
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
-            //if ()
-            //    comboBox1.Text = "";
 
             if (textBox6.Text == "" || int.Parse(textBox6.Text) <= numericUpDown1.Value && int.Parse(textBox6.Text) < numericUpDown2.Value && int.Parse(textBox6.Text) < numericUpDown3.Value)
                 comboBox1.Text = "Dilettanti";
@@ -513,6 +481,92 @@ namespace majid_milestone_42
             var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl }).Where(s=>s.Disciplina == comboBox3.Text).ToList();
 
             dataGridView6.DataSource = dataFin;
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox3.Checked == true)
+            {
+                textBox19.Enabled = true;
+                numericUpDown6.Enabled = true;
+                numericUpDown5.Enabled = true;
+                numericUpDown4.Enabled = true;
+                button6.Visible = true;
+            }
+            if (checkBox3.Checked == false)
+            {
+                textBox19.Enabled = false;
+                numericUpDown6.Enabled = false;
+                numericUpDown5.Enabled = false;
+                numericUpDown4.Enabled = false;
+                button6.Visible = false;
+            }
+        }
+
+        private void checkBox5_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox5.Checked == true)
+            {
+                groupBox3.Visible = true;
+
+                textBox14.Enabled = true;
+                numericUpDown1.Enabled = true;
+                numericUpDown2.Enabled = true;
+                numericUpDown3.Enabled = true;
+
+                textBox14.Clear();
+                numericUpDown1.Value = 0;
+                numericUpDown2.Value = 0;
+                numericUpDown3.Value = 0;
+            }
+            if(checkBox5.Checked == false)
+                groupBox3.Visible = false;
+        }
+
+        private void checkBox4_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox4.Checked == true)
+            {
+                groupBox1.Visible = true;
+
+
+                textBox4.Enabled = true;
+                textBox5.Enabled = true;
+                textBox11.Enabled = true;
+                textBox12.Enabled = true;
+                textBox13.Enabled = true;
+
+
+                textBox4.Clear();
+                textBox5.Clear();
+                textBox11.Clear();
+                textBox12.Clear();
+                textBox13.Clear();
+            }
+
+            if (checkBox4.Checked == false)
+                groupBox4.Visible = false;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl }).ToList();
+            dataGridView6.DataSource = (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] == "#NaN#" ? dataFin : dataFin.Where(p => p.Livello_agonistico == (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] /*&& p.Livello_atleta ==*/ ).ToList();
+            comboBox3.Text = "";
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl }).ToList();
+            dataGridView6.DataSource = (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] == "#NaN#" ? dataFin : dataFin.Where(p => p.Livello_agonistico == (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] /*&& p.Livello_atleta ==*/ ).ToList();
+            comboBox3.Text = "";
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            var dataFin = eleatl.Select(s => new { Codice_Idoneità = s.codI, Nome_medico = s.med, Data_rilascio = s.dataS, Livello_atleta = s.ido, Nome = s.nomeA, Cognome = s.cogn, Data_nascita = s.dataN, Città_residenza = s.citt, Gruppo_sportivo = s.gs.ragioneS, Disciplina = s.disc.nomeD, Livello_agonistico = s.lvl }).ToList();
+            dataGridView6.DataSource = (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] == "#NaN#" ? dataFin : dataFin.Where(p => p.Livello_agonistico == (new string[] { "#NaN#", "Dilettanti", "Junior", "Senior" })[(radioButton1.Checked ? 1 : 0) + (radioButton2.Checked ? 2 : 0) + (radioButton3.Checked ? 3 : 0)] /*&& p.Livello_atleta ==*/ ).ToList();
+            comboBox3.Text = "";
         }
     }
 }

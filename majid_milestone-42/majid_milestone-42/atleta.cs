@@ -185,14 +185,19 @@ namespace majid_milestone_42
         public atleta(string codI, string med, DateTime dataS, int ido, string nomeA, string cogn, DateTime dataN, string citt, gruppisportivi gs, disciplinesportive disc, string lvl)
         {
             if (string.IsNullOrEmpty(codI) == true)
-            {
                 throw new Exception("Inserire un codice è obbligatorio");
-            }
 
             if (_elecod.Contains(codI) == true)
-            {
                 throw new Exception("Codice fiscale già utilizzato");
-            }
+
+            if (ido < disc.livelloDil && ido < disc.livelloJun && ido < disc.livelloSen && lvl != "Dilettanti")
+                throw new Exception("Livello agonistico errato");
+
+            if (ido > disc.livelloDil && ido > disc.livelloJun && ido < disc.livelloSen && lvl != "Junior")
+                throw new Exception("Livello agonistico errato");
+
+            if (ido > disc.livelloDil && ido > disc.livelloJun && ido > disc.livelloSen && lvl != "Senior")
+                throw new Exception("Livello agonistico errato");
 
             _elecod.Add(codI);
 

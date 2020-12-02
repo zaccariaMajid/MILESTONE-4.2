@@ -55,6 +55,10 @@
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -117,6 +121,7 @@
             this.label31 = new System.Windows.Forms.Label();
             this.textBox19 = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox25 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
@@ -126,10 +131,9 @@
             this.textBox22 = new System.Windows.Forms.TextBox();
             this.label36 = new System.Windows.Forms.Label();
             this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
             this.dataGridView5 = new System.Windows.Forms.DataGridView();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.Visualizza = new System.Windows.Forms.TabPage();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.button10 = new System.Windows.Forms.Button();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -137,6 +141,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label37 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -160,7 +165,7 @@
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            this.tabPage4.SuspendLayout();
+            this.Visualizza.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,7 +182,7 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(1612, 733);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "Modifica/elimina un atleta";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // checkBox1
@@ -423,7 +428,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.Visualizza);
             this.tabControl1.Location = new System.Drawing.Point(12, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -432,6 +437,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.checkBox5);
+            this.tabPage1.Controls.Add(this.checkBox4);
+            this.tabPage1.Controls.Add(this.label39);
+            this.tabPage1.Controls.Add(this.label38);
             this.tabPage1.Controls.Add(this.button3);
             this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.dataGridView2);
@@ -446,12 +455,52 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(1612, 733);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "Inserisci nuovi dati";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(392, 327);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(104, 17);
+            this.checkBox5.TabIndex = 37;
+            this.checkBox5.Text = "Nuova disciplina";
+            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBox5.CheckedChanged += new System.EventHandler(this.checkBox5_CheckedChanged);
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(49, 327);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(104, 17);
+            this.checkBox4.TabIndex = 36;
+            this.checkBox4.Text = "Nuova disciplina";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox4.CheckedChanged += new System.EventHandler(this.checkBox4_CheckedChanged);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(926, 24);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(201, 13);
+            this.label39.TabIndex = 35;
+            this.label39.Text = "SELEZIONARE DISCIPLINA SPORTIVA";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(926, 334);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(189, 13);
+            this.label38.TabIndex = 34;
+            this.label38.Text = "SELEZIONARE GRUPPO SPORTIVO";
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(486, 311);
+            this.button3.Location = new System.Drawing.Point(392, 606);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(314, 32);
             this.button3.TabIndex = 33;
@@ -461,7 +510,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(143, 311);
+            this.button2.Location = new System.Drawing.Point(49, 606);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(314, 32);
             this.button2.TabIndex = 32;
@@ -472,7 +521,7 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(831, 349);
+            this.dataGridView2.Location = new System.Drawing.Point(929, 350);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(437, 250);
             this.dataGridView2.TabIndex = 31;
@@ -481,7 +530,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(831, 28);
+            this.dataGridView1.Location = new System.Drawing.Point(929, 40);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(437, 277);
             this.dataGridView1.TabIndex = 30;
@@ -499,7 +548,7 @@
             this.groupBox4.Controls.Add(this.comboBox1);
             this.groupBox4.Controls.Add(this.label8);
             this.groupBox4.Controls.Add(this.textBox10);
-            this.groupBox4.Location = new System.Drawing.Point(486, 28);
+            this.groupBox4.Location = new System.Drawing.Point(392, 44);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(314, 277);
             this.groupBox4.TabIndex = 29;
@@ -594,7 +643,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(334, 644);
+            this.button1.Location = new System.Drawing.Point(944, 675);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(270, 52);
             this.button1.TabIndex = 28;
@@ -612,7 +661,7 @@
             this.groupBox2.Controls.Add(this.textBox6);
             this.groupBox2.Controls.Add(this.textBox1);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Location = new System.Drawing.Point(143, 28);
+            this.groupBox2.Location = new System.Drawing.Point(49, 44);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(314, 277);
             this.groupBox2.TabIndex = 1;
@@ -694,7 +743,7 @@
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label17);
             this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Location = new System.Drawing.Point(486, 349);
+            this.groupBox3.Location = new System.Drawing.Point(392, 350);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(314, 250);
             this.groupBox3.TabIndex = 1;
@@ -778,7 +827,7 @@
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Location = new System.Drawing.Point(143, 349);
+            this.groupBox1.Location = new System.Drawing.Point(49, 350);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(314, 250);
             this.groupBox1.TabIndex = 0;
@@ -883,7 +932,7 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage3.Size = new System.Drawing.Size(1612, 733);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
+            this.tabPage3.Text = "Modifica/elimina una disciplina o un gruppo sportivo";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // checkBox3
@@ -896,6 +945,7 @@
             this.checkBox3.TabIndex = 46;
             this.checkBox3.Text = "Modalità modifica";
             this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // button9
             // 
@@ -970,6 +1020,7 @@
             // 
             // numericUpDown4
             // 
+            this.numericUpDown4.Enabled = false;
             this.numericUpDown4.Location = new System.Drawing.Point(104, 235);
             this.numericUpDown4.Name = "numericUpDown4";
             this.numericUpDown4.Size = new System.Drawing.Size(114, 20);
@@ -977,6 +1028,7 @@
             // 
             // numericUpDown5
             // 
+            this.numericUpDown5.Enabled = false;
             this.numericUpDown5.Location = new System.Drawing.Point(104, 188);
             this.numericUpDown5.Name = "numericUpDown5";
             this.numericUpDown5.Size = new System.Drawing.Size(114, 20);
@@ -984,6 +1036,7 @@
             // 
             // numericUpDown6
             // 
+            this.numericUpDown6.Enabled = false;
             this.numericUpDown6.Location = new System.Drawing.Point(104, 146);
             this.numericUpDown6.Name = "numericUpDown6";
             this.numericUpDown6.Size = new System.Drawing.Size(114, 20);
@@ -1027,6 +1080,7 @@
             // 
             // textBox19
             // 
+            this.textBox19.Enabled = false;
             this.textBox19.Location = new System.Drawing.Point(104, 95);
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(114, 20);
@@ -1034,6 +1088,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.textBox25);
             this.groupBox8.Controls.Add(this.label32);
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Controls.Add(this.textBox20);
@@ -1043,13 +1098,20 @@
             this.groupBox8.Controls.Add(this.textBox22);
             this.groupBox8.Controls.Add(this.label36);
             this.groupBox8.Controls.Add(this.textBox23);
-            this.groupBox8.Controls.Add(this.textBox24);
             this.groupBox8.Location = new System.Drawing.Point(800, 25);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(301, 325);
             this.groupBox8.TabIndex = 2;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "dati gruppo sportivo";
+            // 
+            // textBox25
+            // 
+            this.textBox25.Enabled = false;
+            this.textBox25.Location = new System.Drawing.Point(129, 91);
+            this.textBox25.Name = "textBox25";
+            this.textBox25.Size = new System.Drawing.Size(119, 20);
+            this.textBox25.TabIndex = 28;
             // 
             // label32
             // 
@@ -1128,14 +1190,6 @@
             this.textBox23.Size = new System.Drawing.Size(119, 20);
             this.textBox23.TabIndex = 22;
             // 
-            // textBox24
-            // 
-            this.textBox24.Enabled = false;
-            this.textBox24.Location = new System.Drawing.Point(129, 91);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.Size = new System.Drawing.Size(119, 20);
-            this.textBox24.TabIndex = 21;
-            // 
             // dataGridView5
             // 
             this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1154,28 +1208,29 @@
             this.dataGridView4.TabIndex = 0;
             this.dataGridView4.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView4_CellClick);
             // 
-            // tabPage4
+            // Visualizza
             // 
-            this.tabPage4.Controls.Add(this.comboBox3);
-            this.tabPage4.Controls.Add(this.button10);
-            this.tabPage4.Controls.Add(this.radioButton3);
-            this.tabPage4.Controls.Add(this.radioButton2);
-            this.tabPage4.Controls.Add(this.radioButton1);
-            this.tabPage4.Controls.Add(this.label37);
-            this.tabPage4.Controls.Add(this.dataGridView6);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1612, 733);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "tabPage4";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.Visualizza.Controls.Add(this.comboBox3);
+            this.Visualizza.Controls.Add(this.button10);
+            this.Visualizza.Controls.Add(this.radioButton3);
+            this.Visualizza.Controls.Add(this.radioButton2);
+            this.Visualizza.Controls.Add(this.radioButton1);
+            this.Visualizza.Controls.Add(this.label37);
+            this.Visualizza.Controls.Add(this.dataGridView6);
+            this.Visualizza.Controls.Add(this.groupBox9);
+            this.Visualizza.Location = new System.Drawing.Point(4, 22);
+            this.Visualizza.Name = "Visualizza";
+            this.Visualizza.Padding = new System.Windows.Forms.Padding(3);
+            this.Visualizza.Size = new System.Drawing.Size(1612, 733);
+            this.Visualizza.TabIndex = 3;
+            this.Visualizza.Text = "Visualizza";
+            this.Visualizza.UseVisualStyleBackColor = true;
             // 
             // comboBox3
             // 
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(982, 80);
+            this.comboBox3.Location = new System.Drawing.Point(949, 250);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(265, 21);
             this.comboBox3.TabIndex = 16;
@@ -1183,9 +1238,9 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(982, 241);
+            this.button10.Location = new System.Drawing.Point(949, 406);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(552, 62);
+            this.button10.Size = new System.Drawing.Size(92, 30);
             this.button10.TabIndex = 15;
             this.button10.Text = "button10";
             this.button10.UseVisualStyleBackColor = true;
@@ -1194,41 +1249,44 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(982, 203);
+            this.radioButton3.Location = new System.Drawing.Point(949, 373);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(55, 17);
             this.radioButton3.TabIndex = 14;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Senior";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(982, 171);
+            this.radioButton2.Location = new System.Drawing.Point(949, 341);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(53, 17);
             this.radioButton2.TabIndex = 13;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Junior";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(982, 138);
+            this.radioButton1.Location = new System.Drawing.Point(949, 308);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(66, 17);
             this.radioButton1.TabIndex = 12;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Dilettanti";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label37
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(971, 37);
+            this.label37.Location = new System.Drawing.Point(938, 207);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(276, 31);
             this.label37.TabIndex = 3;
@@ -1241,6 +1299,15 @@
             this.dataGridView6.Name = "dataGridView6";
             this.dataGridView6.Size = new System.Drawing.Size(886, 623);
             this.dataGridView6.TabIndex = 1;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Location = new System.Drawing.Point(924, 196);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(366, 296);
+            this.groupBox9.TabIndex = 17;
+            this.groupBox9.TabStop = false;
+            this.groupBox9.Text = "Visualizza";
             // 
             // Form1
             // 
@@ -1259,6 +1326,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -1283,8 +1351,8 @@
             this.groupBox8.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.Visualizza.ResumeLayout(false);
+            this.Visualizza.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
             this.ResumeLayout(false);
 
@@ -1387,13 +1455,12 @@
         private System.Windows.Forms.TextBox textBox22;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
         private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage Visualizza;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.DataGridView dataGridView6;
         private System.Windows.Forms.RadioButton radioButton3;
@@ -1401,6 +1468,12 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.TextBox textBox25;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.GroupBox groupBox9;
     }
 }
 
