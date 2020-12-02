@@ -121,6 +121,7 @@
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
@@ -141,7 +142,6 @@
             this.label37 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.textBox28 = new System.Windows.Forms.TextBox();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -872,6 +872,7 @@
             // textBox12
             // 
             this.textBox12.Location = new System.Drawing.Point(128, 163);
+            this.textBox12.MaxLength = 10;
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(119, 20);
             this.textBox12.TabIndex = 24;
@@ -1104,6 +1105,13 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "dati gruppo sportivo";
             // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(129, 91);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(119, 20);
+            this.textBox28.TabIndex = 31;
+            // 
             // label32
             // 
             this.label32.AutoSize = true;
@@ -1143,6 +1151,7 @@
             // 
             this.textBox21.Enabled = false;
             this.textBox21.Location = new System.Drawing.Point(129, 200);
+            this.textBox21.MaxLength = 10;
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(119, 20);
             this.textBox21.TabIndex = 24;
@@ -1296,13 +1305,6 @@
             this.groupBox9.TabIndex = 17;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Visualizza";
-            // 
-            // textBox28
-            // 
-            this.textBox28.Location = new System.Drawing.Point(129, 91);
-            this.textBox28.Name = "textBox28";
-            this.textBox28.Size = new System.Drawing.Size(119, 20);
-            this.textBox28.TabIndex = 31;
             // 
             // Form1
             // 

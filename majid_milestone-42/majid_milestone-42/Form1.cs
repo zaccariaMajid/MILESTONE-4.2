@@ -18,24 +18,24 @@ namespace majid_milestone_42
             /////////////////////////////////////////////////////////
             eledisc.Add(new disciplinesportive("Calcio", 30, 50, 80));
             var d = eledisc.Where(s => s.nomeD == "Calcio").FirstOrDefault();
-            elegrup.Add(new gruppisportivi("Carlo spa", "Via sdsPapa", "Mario rossi", "0", "Carlo@gmail.com"));
+            elegrup.Add(new gruppisportivi("Carlo spa", "Via Delle Ripe", "Mario rossi", "2356692564", "Carlo@gmail.com"));
             var r = elegrup.Where(s => s.ragioneS == "Carlo spa").FirstOrDefault();
-            eleatl.Add(new atleta("axl0000s", "giovanni", DateTime.Parse("29/10/2020"), 56, "marco", "mengoni", DateTime.Parse("06/08/2006"), "midwalano", r, d, "Junior"));
+            eleatl.Add(new atleta("axl0000s", "giovanni", DateTime.Parse("29/10/2020"), 56, "Marco", "Mengoni", DateTime.Parse("06/08/2006"), "Livorno", r, d, "Junior"));
             comboBox3.Items.Add("Carlo spa");
             /////////////////////////////////////////////////////////
             eledisc.Add(new disciplinesportive("Basket", 30, 70, 90));
             var dd = eledisc.Where(s => s.nomeD == "Basket").FirstOrDefault();
-            elegrup.Add(new gruppisportivi("giovanni spa", "Via Papa", "giovanni verdi", "0", "giovanni@gmail.com"));
+            elegrup.Add(new gruppisportivi("giovanni spa", "Via Papa", "giovanni verdi", "3225694582", "giovanni@gmail.com"));
             var rr = elegrup.Where(s => s.ragioneS == "giovanni spa").FirstOrDefault();
-            eleatl.Add(new atleta("axl00s", "maria", DateTime.Parse("28/05/2020"), 95, "giuseppe", "diego", DateTime.Parse("08/02/2001"), "miasdlano", rr, dd, "Senior"));
-            comboBox3.Items.Add("giovanni spa");
+            eleatl.Add(new atleta("axl00s", "maria", DateTime.Parse("28/05/2020"), 95, "Giuseppe", "Diego", DateTime.Parse("08/02/2001"), "Milano" ,rr, dd, "Senior"));
+            comboBox3.Items.Add("Giovanni spa");
             /////////////////////////////////////////////////////////
             eledisc.Add(new disciplinesportive("Scherma", 40, 60, 70));
             var ddd = eledisc.Where(s => s.nomeD == "Scherma").FirstOrDefault();
-            elegrup.Add(new gruppisportivi("liano spa", "Vdsia Papa", "liano bianchi", "0", "liano@gmail.com"));
+            elegrup.Add(new gruppisportivi("liano spa", "Piazza", "liano bianchi", "6552134784", "liano@gmail.com"));
             var rrr = elegrup.Where(s => s.ragioneS == "liano spa").FirstOrDefault();
-            eleatl.Add(new atleta("axl0s", "liano", DateTime.Parse("04/12/2019"), 20, "francesco", "carminati", DateTime.Parse("26/05/2002"), "milaadsno", rrr, ddd, "Dilettanti"));
-            comboBox3.Items.Add("liano spa");
+            eleatl.Add(new atleta("axl0s", "liano", DateTime.Parse("04/12/2019"), 20, "Francesco", "Carminati", DateTime.Parse("26/05/2002"), "Genova", rrr, ddd, "Dilettanti"));
+            comboBox3.Items.Add("Liano spa");
             /////////////////////////////////////////////////////////
 
             var g = eledisc.Select(s => new { Nome_disciplina = s.nomeD, Livello_dilettanti = s.livelloDil, Livello_junior = s.livelloJun, Livello_senior = s.livelloSen });
