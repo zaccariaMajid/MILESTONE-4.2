@@ -45,7 +45,7 @@ namespace majid_milestone_42
             }
             set
             {
-                if (value > DateTime.Now.Date)
+                if (value > DateTime.Now.Date || value < dataN)
                     throw new Exception("data non valida");
 
                 _dataS = value;
@@ -95,7 +95,7 @@ namespace majid_milestone_42
             }
             set
             {
-                if (value > DateTime.Now.Date)
+                if (value > DateTime.Now.Date || value > dataS.Date)
                     throw new Exception("data non valida");
 
                 _dataN = value;
@@ -184,20 +184,23 @@ namespace majid_milestone_42
 
         public atleta(string codI, string med, DateTime dataS, int ido, string nomeA, string cogn, DateTime dataN, string citt, gruppisportivi gs, disciplinesportive disc, string lvl)
         {
-            if (string.IsNullOrEmpty(codI) == true)
+            if (string.IsNullOrWhiteSpace(codI) == true)
                 throw new Exception("Inserire un codice è obbligatorio");
 
             if (_elecod.Contains(codI) == true)
                 throw new Exception("Codice fiscale già utilizzato");
 
-            if (ido < disc.livelloDil && ido < disc.livelloJun && ido < disc.livelloSen && lvl != "Dilettanti")
-                throw new Exception("Livello agonistico errato");
+            if(dataS < dataN || dataN > dataS)
+                throw new Exception("Codice fiscale già utilizzato");
 
-            if (ido > disc.livelloDil && ido > disc.livelloJun && ido < disc.livelloSen && lvl != "Junior")
-                throw new Exception("Livello agonistico errato");
+            //if (ido < disc.livelloDil && ido < disc.livelloJun && ido < disc.livelloSen && lvl != "Dilettanti")
+            //    throw new Exception("Livello agonistico errato");
 
-            if (ido > disc.livelloDil && ido > disc.livelloJun && ido > disc.livelloSen && lvl != "Senior")
-                throw new Exception("Livello agonistico errato");
+            //if (ido > disc.livelloDil && ido > disc.livelloJun && ido < disc.livelloSen && lvl != "Junior")
+            //    throw new Exception("Livello agonistico errato");
+
+            //if (ido > disc.livelloDil && ido > disc.livelloJun && ido > disc.livelloSen && lvl != "Senior")
+            //    throw new Exception("Livello agonistico errato");
 
             _elecod.Add(codI);
 

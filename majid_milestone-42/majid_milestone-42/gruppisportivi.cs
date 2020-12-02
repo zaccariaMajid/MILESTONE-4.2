@@ -47,15 +47,11 @@ namespace majid_milestone_42
         
         public gruppisportivi(string ragioneS, string indirizzoS, string nomeP, string telefono, string mail)
         {
-
-
-
             this.ragioneS = ragioneS;
             this.indirizzoS = indirizzoS;
             this.nomeP = nomeP;
             this.telefono = telefono;
             this.mail = mail;
-
         }
     }
 }

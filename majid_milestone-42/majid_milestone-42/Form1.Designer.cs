@@ -112,6 +112,7 @@
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.textBox26 = new System.Windows.Forms.TextBox();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
@@ -119,9 +120,7 @@
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.textBox20 = new System.Windows.Forms.TextBox();
@@ -142,6 +141,7 @@
             this.label37 = new System.Windows.Forms.Label();
             this.dataGridView6 = new System.Windows.Forms.DataGridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.textBox28 = new System.Windows.Forms.TextBox();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -1003,6 +1003,7 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.textBox26);
             this.groupBox7.Controls.Add(this.numericUpDown4);
             this.groupBox7.Controls.Add(this.numericUpDown5);
             this.groupBox7.Controls.Add(this.numericUpDown6);
@@ -1010,13 +1011,19 @@
             this.groupBox7.Controls.Add(this.label29);
             this.groupBox7.Controls.Add(this.label30);
             this.groupBox7.Controls.Add(this.label31);
-            this.groupBox7.Controls.Add(this.textBox19);
             this.groupBox7.Location = new System.Drawing.Point(1179, 25);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(301, 325);
             this.groupBox7.TabIndex = 3;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "dati disciplina";
+            // 
+            // textBox26
+            // 
+            this.textBox26.Location = new System.Drawing.Point(104, 95);
+            this.textBox26.Name = "textBox26";
+            this.textBox26.Size = new System.Drawing.Size(114, 20);
+            this.textBox26.TabIndex = 38;
             // 
             // numericUpDown4
             // 
@@ -1078,17 +1085,9 @@
             this.label31.TabIndex = 22;
             this.label31.Text = "Livello dilettanti";
             // 
-            // textBox19
-            // 
-            this.textBox19.Enabled = false;
-            this.textBox19.Location = new System.Drawing.Point(104, 95);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(114, 20);
-            this.textBox19.TabIndex = 27;
-            // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.textBox25);
+            this.groupBox8.Controls.Add(this.textBox28);
             this.groupBox8.Controls.Add(this.label32);
             this.groupBox8.Controls.Add(this.label33);
             this.groupBox8.Controls.Add(this.textBox20);
@@ -1104,14 +1103,6 @@
             this.groupBox8.TabIndex = 2;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "dati gruppo sportivo";
-            // 
-            // textBox25
-            // 
-            this.textBox25.Enabled = false;
-            this.textBox25.Location = new System.Drawing.Point(129, 91);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.Size = new System.Drawing.Size(119, 20);
-            this.textBox25.TabIndex = 28;
             // 
             // label32
             // 
@@ -1256,7 +1247,6 @@
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Senior";
             this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // radioButton2
             // 
@@ -1268,7 +1258,6 @@
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Junior";
             this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -1280,7 +1269,6 @@
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Dilettanti";
             this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // label37
             // 
@@ -1308,6 +1296,13 @@
             this.groupBox9.TabIndex = 17;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Visualizza";
+            // 
+            // textBox28
+            // 
+            this.textBox28.Location = new System.Drawing.Point(129, 91);
+            this.textBox28.Name = "textBox28";
+            this.textBox28.Size = new System.Drawing.Size(119, 20);
+            this.textBox28.TabIndex = 31;
             // 
             // Form1
             // 
@@ -1444,7 +1439,6 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.TextBox textBox19;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
@@ -1468,12 +1462,13 @@
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.TextBox textBox25;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.TextBox textBox26;
+        private System.Windows.Forms.TextBox textBox28;
     }
 }
 
